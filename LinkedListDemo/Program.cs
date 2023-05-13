@@ -14,7 +14,7 @@ namespace LinkedListDemo
             LinkedList linkedList = new LinkedList();
             Console.WriteLine("Choose the following");
             Console.WriteLine("1.Add Element to linked list\n2.Add Elements in reverse order\n3.Remove first element" +"\n4.Remove last Element"
-                );
+               +"\n5. Size of Node" );
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -44,6 +44,13 @@ namespace LinkedListDemo
                     linkedList.AddNode(110);
                     linkedList.RemoveAtLast();
                     linkedList.Display();
+                    break;
+                case 5:
+                    linkedList.AddNode(90);
+                    linkedList.AddNode(100);
+                    linkedList.AddNode(110);
+                    linkedList.SizeofNode();
+                    //linkedList.Display();
                     break;
 
                 default:

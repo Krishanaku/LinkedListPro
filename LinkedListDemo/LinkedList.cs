@@ -82,6 +82,24 @@ namespace LinkedListDemo
             lastNode.next = null;
         }
 
+        // size of node........
+        public void SizeofNode()
+        {
+            Node temp = head;
+            int count = 0;
+            if (temp == null)
+            {
+                Console.WriteLine("LinkedList is Empty");
+            }
+            while (temp != null)
+            {
+                //Console.WriteLine(temp.data);
+                temp = temp.next;
+                count++;
+            }
+            Console.WriteLine("Size of Node : "+count);
+
+        }
 
 
         //Display 
