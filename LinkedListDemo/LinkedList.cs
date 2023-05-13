@@ -9,26 +9,26 @@ namespace LinkedListDemo
     public class LinkedList
     {
         public Node head; ////Empty node To point
-        //public void AddNode(int data)
-        //{
-        //    Node node = new Node(data);
-        //    if (this.head == null)
-        //    {
-        //        this.head = node;
-        //    }
-        //    else
-        //    {
-        //        Node temp = head; //Stroing last Data In temp Variable...
-        //        while (temp.next != null)
-        //        {
-        //            temp = temp.next;
-        //        }
-        //        temp.next = node;
+        public void AddNode(int data)
+        {
+            Node node = new Node(data);
+            if (this.head == null)
+            {
+                this.head = node;
+            }
+            else
+            {
+                Node temp = head; //Stroing last Data In temp Variable...
+                while (temp.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = node;
 
-        //    }
-        //    Console.WriteLine("{0} Linked List", node.data);
+            }
+            Console.WriteLine("{0} Linked List", node.data);
 
-        //}
+        }
 
         // Reverse Data element.............
         public void ReverseAddElement(int data)
@@ -46,6 +46,23 @@ namespace LinkedListDemo
             }
 
         }
+
+
+        // Removed First Element.... 
+        public void RemoveAtFirst()
+        {
+            if(this.head==null)
+            {
+                Console.WriteLine("Linked list is empty");
+            }
+            else
+            {
+                this.head = this.head.next;
+                Console.WriteLine("First element Removed !!");
+            }
+        }
+
+
 
         //Display 
         public void Display()

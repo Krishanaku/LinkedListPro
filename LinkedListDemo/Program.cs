@@ -11,17 +11,37 @@ namespace LinkedListDemo
         static void Main(string[] args)
         {
 
-            //UC1...................
             LinkedList linkedList = new LinkedList();
-            //linkedList.AddNode(56);
-            //linkedList.AddNode(30);
-            //linkedList.AddNode(70);
+            Console.WriteLine("Choose the following");
+            Console.WriteLine("1.Add Element to linked list\n2.Add Elements in reverse order\n3.Remove first element" 
+                );
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch (option)
+            {
+                case 1:
+                    linkedList.AddNode(56);
+                    linkedList.AddNode(30);
+                    linkedList.AddNode(70);
+                    linkedList.Display();
+                    break;
+                case 2:
+                    linkedList.ReverseAddElement(90);
+                    linkedList.ReverseAddElement(100);
+                    linkedList.ReverseAddElement(110);
+                    linkedList.Display();
+                    break;
+                case 3:
+                    linkedList.AddNode(90);
+                    linkedList.AddNode(100);
+                    linkedList.AddNode(110);
+                    linkedList.RemoveAtFirst();
+                    linkedList.Display();
+                    break;
 
-            // uc2.................
-            linkedList.ReverseAddElement(100);
-            linkedList.ReverseAddElement(110);
-            linkedList.ReverseAddElement(120);
-            linkedList.Display();
+                default:
+                    Console.WriteLine("Option is not Found !!!");
+                    break;
+            }
             Console.ReadLine();
 
 
