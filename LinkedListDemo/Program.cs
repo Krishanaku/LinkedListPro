@@ -13,9 +13,14 @@ namespace LinkedListDemo
 
             //UC1...................
             LinkedList linkedList = new LinkedList();
-            linkedList.Add(56);
-            linkedList.Add(30);
-            linkedList.Add(70);
+            //linkedList.AddNode(56);
+            //linkedList.AddNode(30);
+            //linkedList.AddNode(70);
+
+            // uc2.................
+            linkedList.ReverseAddElement(100);
+            linkedList.ReverseAddElement(110);
+            linkedList.ReverseAddElement(120);
             linkedList.Display();
             Console.ReadLine();
 

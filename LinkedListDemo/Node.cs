@@ -9,7 +9,7 @@ namespace LinkedListDemo
     public  class Node
     {
         public int data;
-        public Node Next; // Address of Next Node
+        public Node next; // Address of Next Node
 
         //constructor..................
         public Node(int data) 
