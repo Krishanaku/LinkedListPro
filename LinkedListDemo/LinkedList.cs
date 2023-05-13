@@ -62,6 +62,26 @@ namespace LinkedListDemo
             }
         }
 
+        //Remove at Last..................
+        public void RemoveAtLast()
+        {
+            if( this.head==null)
+            {
+                Console.WriteLine("Linked list is empty");
+
+            }
+            if(this.head.next == null)
+            {
+                this.head = null;
+            }
+            Node lastNode = this.head;
+            while(lastNode.next.next != null)
+            {
+                lastNode = lastNode.next;
+            }
+            lastNode.next = null;
+        }
+
 
 
         //Display 
