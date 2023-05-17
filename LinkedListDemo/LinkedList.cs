@@ -122,6 +122,30 @@ namespace LinkedListDemo
             temp.next = newNode;
         }
 
+        //Delete Node or Data from the given Position.
+        public void DeleteNodeAtSpecificPosition(int position)
+        {
+            Console.WriteLine($"Position : {position}");
+            if (position == 1)
+            {
+                head = head.next;
+            }
+            else
+            {
+                Node current = head;
+                Node previous = null;
+                int count = 1;
+                while (count <= position - 1)
+                {
+                    previous = current;
+                    current = current.next;
+                    count++;
+                }
+                previous.next = current.next;
+
+            }
+        }
+
 
         //Display 
         public void Display()

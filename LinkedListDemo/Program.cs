@@ -77,7 +77,8 @@ namespace LinkedListDemo
             linkedListt.InsertNodeSpecificPosit(2, 232);
             linkedListt.InsertNodeSpecificPosit(3, 20);
             linkedListt.Display();
-            //linkedListt.DeleteNodeAtSpecificPosition(2);
+            linkedListt.DeleteNodeAtSpecificPosition(2);
+            linkedListt.Display();
             //linkedListt.Sorting(65);
             //linkedListt.Sorting(2);
             //linkedListt.Sorting(50);
