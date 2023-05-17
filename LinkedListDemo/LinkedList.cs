@@ -101,6 +101,27 @@ namespace LinkedListDemo
 
         }
 
+        //Insert Data from the given position.
+        public void InsertNodeSpecificPosit(int position, int data)
+        {
+            Console.WriteLine($"Position is entered : {position} and Data is : {data}");
+            if (position == 0)
+            {
+                ReverseAddElement(data);
+                return;
+            }
+            Node newNode = new Node(data);
+            Node temp = head;
+            int count = 1;
+            while (count < position - 1)
+            {
+                temp = temp.next;
+                count++;
+            }
+            newNode.next = temp.next;
+            temp.next = newNode;
+        }
+
 
         //Display 
         public void Display()
