@@ -146,6 +146,28 @@ namespace LinkedListDemo
             }
         }
 
+        //For Sorting the LinkedList.
+        public void Sorting(int value)
+        {
+            Node newNode = new Node(value);
+
+            if (head == null || value < head.data)
+            {
+                newNode.next = head;
+                head = newNode;
+            }
+            else
+            {
+                Node current = head;
+                while (current.next != null && current.next.data < value)
+                {
+                    current = current.next;
+                }
+                newNode.next = current.next;
+                current.next = newNode;
+            }
+        }
+
 
         //Display 
         public void Display()

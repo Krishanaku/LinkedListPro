@@ -72,18 +72,18 @@ namespace LinkedListDemo
             //linkedListt.RemoveAtLast();
             //linkedListt.SizeofNode();
             //linkedListt.Display();
-            linkedListt.InsertNodeSpecificPosit(0, 205);
-            linkedListt.InsertNodeSpecificPosit(1, 68);
-            linkedListt.InsertNodeSpecificPosit(2, 232);
-            linkedListt.InsertNodeSpecificPosit(3, 20);
-            linkedListt.Display();
-            linkedListt.DeleteNodeAtSpecificPosition(2);
-            linkedListt.Display();
-            //linkedListt.Sorting(65);
-            //linkedListt.Sorting(2);
-            //linkedListt.Sorting(50);
-            //linkedListt.Sorting(69);
+            //linkedListt.InsertNodeSpecificPosit(0, 205);
+            //linkedListt.InsertNodeSpecificPosit(1, 68);
+            //linkedListt.InsertNodeSpecificPosit(2, 232);
+            //linkedListt.InsertNodeSpecificPosit(3, 20);
             //linkedListt.Display();
+            //linkedListt.DeleteNodeAtSpecificPosition(2);
+            //linkedListt.Display();
+            linkedListt.Sorting(65);
+            linkedListt.Sorting(2);
+            linkedListt.Sorting(50);
+            linkedListt.Sorting(69);
+            linkedListt.Display();
             Console.ReadLine();
 
         }
